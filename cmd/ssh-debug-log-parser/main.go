@@ -178,6 +178,7 @@ func main() {
 			t.AppendFooter(table.Row{"Count", len(usersMap)})
 			t.SetStyle(table.StyleColoredBlackOnGreenWhite)
 			t.Render()
+			fmt.Println()
 
 			os.Exit(0)
 		}
@@ -211,7 +212,7 @@ func main() {
 		fmt.Printf("\nUsers:\n\n")
 
 		for user, el := range usersMap {
-			fmt.Printf(" \U0001FBC5 %s\n", p.Yellow(user))
+			fmt.Printf(" \U0001F6B9 %s\n", p.Yellow(user))
 
 			if (aPrintRemoteIPs || aPrintAll) && len(el.RemoteIPs) > 0 {
 				fmt.Println(p.KeyText("    IP addresses:"))
