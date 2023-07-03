@@ -1,0 +1,14 @@
+log_files:
+  - "auth.log"
+ignore:
+  users:
+    - "admin"
+    - "mysql"
+    - "root"
+    - "ubuntu"
+    - "ubnt"
+  ips:
+# Output format (list, table, json-file)
+output: 
+  format: "list"
+  json_file: "ssh-debug-log-parser-output.json"

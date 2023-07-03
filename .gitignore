@@ -1,0 +1,4 @@
+ssh-debug-log-parser-*
+*.log
+*.log.*
+.DS_Store
